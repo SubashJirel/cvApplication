@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import exampleData from './example-data';
 import PersonalDetails from './components/personal-info/PersonalDetails';
+import ResumePreview from './components/previewRightSide/ResumePreview';
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo);
@@ -22,8 +23,9 @@ function App() {
             address={personalInfo.address}
           />
         </div>
-        <div className="border-2 border-green-400 bg-orange-500 col-span-3">
+        <div className=" col-span-3">
           Preview side
+          <ResumePreview personalInfo={personalInfo} />
         </div>
       </div>
     </>
