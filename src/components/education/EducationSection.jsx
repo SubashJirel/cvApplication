@@ -1,7 +1,35 @@
 import { useState } from 'react';
-import InputGroup from '../inputGroup';
+import uniqid from 'uniqid';
+
+import exampleData from '../../example-data';
+
+import { Trash2 } from 'lucide-react';
 function EducationSection({ education }) {
   const [showBtnForm, setShowBtnForm] = useState('button');
+  const [formData, setFormData] = useState({
+    degree: '',
+    schoolName: '',
+    startDate: '',
+    endDate: '',
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleAddEducation = () => {
+    const newEducation = {
+      ...formData,
+      id: uniqid(),
+    };
+    education.push(newEducation);
+    toggleShow();
+    console.log(newEducation);
+  };
+
   const btnShow = showBtnForm == 'button';
   const formShow = showBtnForm == 'form';
   function toggleShow() {
@@ -11,7 +39,14 @@ function EducationSection({ education }) {
     <>
       <h1 className="text-3xl">Education</h1>
       {education.map((val) => (
-        <div key={val.id}>{val.schoolName}</div>
+        <>
+          <div className="flex items-center">
+            <div className="m-3" key={val.id}>
+              {val.schoolName}{' '}
+            </div>
+            <Trash2 />
+          </div>
+        </>
       ))}
       {btnShow && (
         <button
@@ -29,6 +64,9 @@ function EducationSection({ education }) {
                 School Name:
               </label>
               <input
+                name="schoolName"
+                value={formData.schoolName}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
                 type="text"
               />
@@ -37,6 +75,9 @@ function EducationSection({ education }) {
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2">Degree:</label>
               <input
+                name="degree"
+                value={formData.degree}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
                 type="text"
               />
@@ -47,6 +88,9 @@ function EducationSection({ education }) {
                 Start Date:
               </label>
               <input
+                name="startDate"
+                value={formData.startDate}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
                 type="text"
               />
@@ -55,6 +99,9 @@ function EducationSection({ education }) {
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2">End Date:</label>
               <input
+                name="endDate"
+                value={formData.endDate}
+                onChange={handleChange}
                 className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
                 type="text"
               />
@@ -75,6 +122,7 @@ function EducationSection({ education }) {
                 Cancel
               </button>
               <button
+                onClick={handleAddEducation}
                 type="button"
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
               >

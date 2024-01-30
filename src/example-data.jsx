@@ -12,21 +12,19 @@ const exampleData = {
         {
           degree: 'Bachelors in Computer Science',
           schoolName: 'Kathmandu University',
-          location: 'Kathmandu, Nepal',
+
           startDate: '09/2017',
           endDate: '06/2021',
-          isCollapsed: true,
-          isHidden: false,
+
           id: uniqid(),
         },
         {
           degree: "Master's Degree in Information Technology",
           schoolName: 'Tribhuvan University',
-          location: 'Pokhara, Nepal',
+
           startDate: '08/2021',
           endDate: 'present',
-          isCollapsed: true,
-          isHidden: true,
+
           id: uniqid(),
         },
       ],
@@ -52,8 +50,7 @@ const exampleData = {
             'Assisted in analyzing and interpreting data for various projects. Contributed to the development of data-driven insights and reports.',
           startDate: '05/2020',
           endDate: '08/2020',
-          isCollapsed: true,
-          isHidden: false,
+
           id: uniqid(),
         },
       ],
