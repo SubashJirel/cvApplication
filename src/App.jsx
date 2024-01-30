@@ -3,12 +3,11 @@ import exampleData from './example-data';
 import PersonalDetails from './components/personal-info/PersonalDetails';
 import ResumePreview from './components/previewRightSide/ResumePreview';
 import EducationSection from './components/education/EducationSection';
+import ExperienceSection from './components/experience/ExperienceSection';
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo);
-  const [educationRecords, setEducationRecords] = useState(
-    exampleData.personalInfo.sections.educations
-  );
+
   // console.log(exampleData.personalInfo.sections.educations);
   // const [experienceRecords, setExperienceRecords] = useState(
   //   exampleData.sections.experiences
@@ -23,7 +22,7 @@ function App() {
   return (
     <>
       <div className="border-2 border-black  grid grid-cols-5  ">
-        <div className="border-2 border-green-400 bg-blue-400 col-span-2">
+        <div className="border-2 border-green-400 bg-blue-400 col-span-2 overflow-auto custom-scrollbar h-screen">
           <PersonalDetails
             onChange={handlePersonalInfoChange}
             fullName={personalInfo.fullName}
@@ -31,7 +30,8 @@ function App() {
             phoneNumber={personalInfo.phoneNumber}
             address={personalInfo.address}
           />
-          <EducationSection education={educationRecords} />
+          <EducationSection />
+          <ExperienceSection />
         </div>
 
         <div className=" col-span-3">

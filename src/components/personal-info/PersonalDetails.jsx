@@ -2,7 +2,7 @@ import InputGroup from '../inputGroup';
 function PersonalDetails({ fullName, email, phoneNumber, address, onChange }) {
   return (
     <>
-      <form action="">
+      <form className="ps-8" action="">
         <h2>Personal Details</h2>
         <InputGroup
           type="text"

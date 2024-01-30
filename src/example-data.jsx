@@ -33,24 +33,19 @@ const exampleData = {
         {
           companyName: 'Tech Innovators Nepal',
           positionTitle: 'Software Engineer',
-          location: 'Kathmandu, Nepal',
           description:
             'Worked on developing innovative software solutions, collaborating with cross-functional teams to deliver high-quality products.',
           startDate: '07/2021',
           endDate: 'present',
-          isCollapsed: true,
-          isHidden: false,
           id: uniqid(),
         },
         {
           companyName: 'Data Science Nepal',
           positionTitle: 'Data Analyst Intern',
-          location: 'Pokhara, Nepal',
           description:
             'Assisted in analyzing and interpreting data for various projects. Contributed to the development of data-driven insights and reports.',
           startDate: '05/2020',
           endDate: '08/2020',
-
           id: uniqid(),
         },
       ],

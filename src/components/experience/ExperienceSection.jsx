@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import EducationForm from './educationForm';
+import ExperienceForm from './ExperienceForm';
 import exampleData from '../../example-data';
 
 import { Trash2 } from 'lucide-react';
-function EducationSection() {
+function ExperienceSection() {
   const [showBtnForm, setShowBtnForm] = useState('button');
-  const [education, setEducation] = useState(
-    exampleData.personalInfo.sections.educations
+  const [experience, setExperience] = useState(
+    exampleData.personalInfo.sections.experiences
   );
 
-  function deleteEducation(valId) {
-    const updatedEducation = education.filter((val) => val.id != valId);
-    setEducation(updatedEducation);
+  function deleteExperience(valId) {
+    const updatedExperience = experience.filter((val) => val.id != valId);
+    setExperience(updatedExperience);
   }
 
   const btnShow = showBtnForm == 'button';
@@ -21,17 +21,17 @@ function EducationSection() {
   }
   return (
     <div className="ps-8">
-      <h1 className="text-3xl font-bold mb-3 mt-3">Education</h1>
-      {education.map((val) => (
+      <h1 className="text-3xl">Experience</h1>
+      {experience.map((val) => (
         <>
           <div className="flex items-center border border-solid border-black rounded-3xl mb-2 mr-4">
             <div className="m-3 flex flex-col" key={val.id}>
-              <div className=" font-bold">{val.schoolName}</div>
-              <div>{val.degree}</div>
+              <div className=" font-bold">{val.companyName}</div>
+              <div>{val.positionTitle}</div>
             </div>
             <Trash2
               style={{ cursor: 'pointer' }}
-              onClick={() => deleteEducation(val.id)}
+              onClick={() => deleteExperience(val.id)}
             />
           </div>
         </>
@@ -45,9 +45,9 @@ function EducationSection() {
         </button>
       )}
       {formShow && (
-        <EducationForm education={education} toggleShow={toggleShow} />
+        <ExperienceForm experience={experience} toggleShow={toggleShow} />
       )}
     </div>
   );
 }
-export default EducationSection;
+export default ExperienceSection;
