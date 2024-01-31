@@ -15,7 +15,7 @@ const exampleData = {
 
           startDate: '09/2017',
           endDate: '06/2021',
-
+          location: 'Kathmandu',
           id: uniqid(),
         },
         {
@@ -24,6 +24,7 @@ const exampleData = {
 
           startDate: '08/2021',
           endDate: 'present',
+          location: 'Bharatpur',
 
           id: uniqid(),
         },
@@ -37,6 +38,7 @@ const exampleData = {
             'Worked on developing innovative software solutions, collaborating with cross-functional teams to deliver high-quality products.',
           startDate: '07/2021',
           endDate: 'present',
+          location: 'Pokhara',
           id: uniqid(),
         },
         {
@@ -46,6 +48,7 @@ const exampleData = {
             'Assisted in analyzing and interpreting data for various projects. Contributed to the development of data-driven insights and reports.',
           startDate: '05/2020',
           endDate: '08/2020',
+          location: 'Chitwan',
           id: uniqid(),
         },
       ],

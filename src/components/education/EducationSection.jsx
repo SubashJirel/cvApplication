@@ -3,11 +3,11 @@ import EducationForm from './educationForm';
 import exampleData from '../../example-data';
 
 import { Trash2 } from 'lucide-react';
-function EducationSection() {
+function EducationSection({ education, setEducation }) {
   const [showBtnForm, setShowBtnForm] = useState('button');
-  const [education, setEducation] = useState(
-    exampleData.personalInfo.sections.educations
-  );
+  // const [education, setEducation] = useState(
+  //   exampleData.personalInfo.sections.educations
+  // );
 
   function deleteEducation(valId) {
     const updatedEducation = education.filter((val) => val.id != valId);
@@ -45,7 +45,11 @@ function EducationSection() {
         </button>
       )}
       {formShow && (
-        <EducationForm education={education} toggleShow={toggleShow} />
+        <EducationForm
+          education={education}
+          setEducation={setEducation}
+          toggleShow={toggleShow}
+        />
       )}
     </div>
   );

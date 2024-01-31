@@ -7,7 +7,9 @@ import ExperienceSection from './components/experience/ExperienceSection';
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo);
-
+  const [education, setEducation] = useState(
+    exampleData.personalInfo.sections.educations
+  );
   // console.log(exampleData.personalInfo.sections.educations);
   // const [experienceRecords, setExperienceRecords] = useState(
   //   exampleData.sections.experiences
@@ -29,12 +31,12 @@ function App() {
             phoneNumber={personalInfo.phoneNumber}
             address={personalInfo.address}
           />
-          <EducationSection />
+          <EducationSection education={education} setEducation={setEducation} />
           <ExperienceSection />
         </div>
 
         <div className=" col-span-3 bg-slate-500 flex flex-col space-y-4 ">
-          <ResumePreview personalInfo={personalInfo} />
+          <ResumePreview personalInfo={personalInfo} education={education} />
         </div>
       </div>
     </>

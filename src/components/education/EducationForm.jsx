@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import uniqid from 'uniqid';
+import PreviewEducation from '../previewRightSide/PreviewEducation';
 
-function EducationForm({ education, toggleShow }) {
+function EducationForm({ education, setEducation, toggleShow }) {
   const [formData, setFormData] = useState({
     degree: '',
     schoolName: '',
@@ -21,7 +22,8 @@ function EducationForm({ education, toggleShow }) {
       ...formData,
       id: uniqid(),
     };
-    education.push(newEducation);
+
+    setEducation((PreviewEducation) => [...PreviewEducation, formData]);
     toggleShow();
     console.log(newEducation);
   };
