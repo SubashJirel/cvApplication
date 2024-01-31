@@ -3,11 +3,8 @@ import ExperienceForm from './ExperienceForm';
 import exampleData from '../../example-data';
 
 import { Trash2 } from 'lucide-react';
-function ExperienceSection() {
+function ExperienceSection({ experience, setExperience }) {
   const [showBtnForm, setShowBtnForm] = useState('button');
-  const [experience, setExperience] = useState(
-    exampleData.personalInfo.sections.experiences
-  );
 
   function deleteExperience(valId) {
     const updatedExperience = experience.filter((val) => val.id != valId);
@@ -45,7 +42,11 @@ function ExperienceSection() {
         </button>
       )}
       {formShow && (
-        <ExperienceForm experience={experience} toggleShow={toggleShow} />
+        <ExperienceForm
+          experience={experience}
+          setExperience={setExperience}
+          toggleShow={toggleShow}
+        />
       )}
     </div>
   );

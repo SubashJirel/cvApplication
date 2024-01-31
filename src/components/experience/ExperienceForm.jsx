@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import uniqid from 'uniqid';
 
-function ExperienceForm({ experience, toggleShow }) {
+function ExperienceForm({ experience, setExperience, toggleShow }) {
   const [formData, setFormData] = useState({
     companyName: '',
     positionTitle: '',
@@ -22,7 +22,7 @@ function ExperienceForm({ experience, toggleShow }) {
       ...formData,
       id: uniqid(),
     };
-    experience.push(newExperience);
+    setExperience((prevExperience) => [...prevExperience, newExperience]);
     toggleShow();
     console.log(newExperience);
   };

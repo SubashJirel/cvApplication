@@ -1,11 +1,11 @@
-import exampleData from '../../example-data';
-import { useState } from 'react';
 function PreviewEducation({ education }) {
   return (
     <>
-      <h2 className="text-2xl font-bold">Education</h2>
+      <h2 className="text-2xl font-bold bg-[#EEF1F3] text-center mt-5 ml-10 mr-5 p-2">
+        Education
+      </h2>
       {education.map((val) => (
-        <section className="flex gap-3" key={val.id}>
+        <section className="flex gap-3 p-2 ml-10 mt-2" key={val.id}>
           <div>
             <div className="flex flex-col">
               {val.startDate} - {val.endDate}

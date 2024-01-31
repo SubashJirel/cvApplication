@@ -3,7 +3,7 @@ function PreviewPersonalDetails({ personalInfo }) {
   const { fullName, email, phoneNumber, address } = personalInfo;
 
   return (
-    <div className="bg-black text-white w-full h-3/6 pt-6">
+    <div className="bg-[#0E374E] text-white h-[140px] w-full  pt-6">
       <h1 className="resume-name text-center text-3xl font-bold mb-6">
         {fullName}
       </h1>

@@ -10,6 +10,9 @@ function App() {
   const [education, setEducation] = useState(
     exampleData.personalInfo.sections.educations
   );
+  const [experience, setExperience] = useState(
+    exampleData.personalInfo.sections.experiences
+  );
   // console.log(exampleData.personalInfo.sections.educations);
   // const [experienceRecords, setExperienceRecords] = useState(
   //   exampleData.sections.experiences
@@ -32,11 +35,18 @@ function App() {
             address={personalInfo.address}
           />
           <EducationSection education={education} setEducation={setEducation} />
-          <ExperienceSection />
+          <ExperienceSection
+            experience={experience}
+            setExperience={setExperience}
+          />
         </div>
 
         <div className=" col-span-3 bg-slate-500 flex flex-col space-y-4 ">
-          <ResumePreview personalInfo={personalInfo} education={education} />
+          <ResumePreview
+            personalInfo={personalInfo}
+            education={education}
+            experience={experience}
+          />
         </div>
       </div>
     </>
