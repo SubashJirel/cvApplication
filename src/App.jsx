@@ -17,11 +17,10 @@ function App() {
     console.log(e.target.dataset);
     setPersonalInfo({ ...personalInfo, [key]: e.target.value });
   }
-  function handleChangeItem() {}
-  function handleDeleteItem() {}
+
   return (
     <>
-      <div className="border-2 border-black  grid grid-cols-5  ">
+      <div className="border-2 border-red-500  grid grid-cols-5 h-screen ">
         <div className="border-2 border-green-400 bg-blue-400 col-span-2 overflow-auto custom-scrollbar h-screen">
           <PersonalDetails
             onChange={handlePersonalInfoChange}
@@ -34,8 +33,7 @@ function App() {
           <ExperienceSection />
         </div>
 
-        <div className=" col-span-3">
-          Preview side
+        <div className=" col-span-3 bg-slate-500 flex flex-col space-y-4 ">
           <ResumePreview personalInfo={personalInfo} />
         </div>
       </div>

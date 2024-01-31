@@ -21,7 +21,7 @@ function ExperienceSection() {
   }
   return (
     <div className="ps-8">
-      <h1 className="text-3xl">Experience</h1>
+      <h1 className="text-3xl font-bold mb-3 mt-3">Experience</h1>
       {experience.map((val) => (
         <>
           <div className="flex items-center border border-solid border-black rounded-3xl mb-2 mr-4">
