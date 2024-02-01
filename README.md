@@ -31,11 +31,11 @@ A simple React application for building and customizing a Curriculum Vitae (CV).
 
 ## Deployment
 
-The project is configured to deploy on [Netlify](https://www.netlify.com/). The `dist` folder, containing the optimized build artifacts, is included in the Git repository to facilitate seamless Netlify deployment.
+The project is configured to deploy on [Vercel](https://www.vercel.com/). The `dist` folder, containing the optimized build artifacts, is included in the Git repository to facilitate seamless Netlify deployment.
 
 ## Live Demo
 
-Check out the live demo of CV builder [here]().
+Check out the live demo of CV builder [here](https://cv-application-one-opal.vercel.app/).
 
 ## Technologies Used
 
