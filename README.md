@@ -1,8 +1,49 @@
-# React + Vite
+# React CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application for building and customizing a Curriculum Vitae (CV).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create and customize your Curriculum Vitae.
+- Add personal information, education, work experience, skills, and more.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/SubashJirel/cvApplication.git
+   ```
+
+## Usage
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## Deployment
+
+The project is configured to deploy on [Netlify](https://www.netlify.com/). The `dist` folder, containing the optimized build artifacts, is included in the Git repository to facilitate seamless Netlify deployment.
+
+## Live Demo
+
+Check out the live demo of the Currency Converter [here]().
+
+## Technologies Used
+
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+- [Lucide](https://lucide.dev/) - Icons components
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

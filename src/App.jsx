@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import exampleData from './example-data';
 import PersonalDetails from './components/personal-info/PersonalDetails';
 import ResumePreview from './components/previewRightSide/ResumePreview';
@@ -6,6 +6,9 @@ import EducationSection from './components/education/EducationSection';
 import ExperienceSection from './components/experience/ExperienceSection';
 
 function App() {
+  useEffect(() => {
+    document.title = 'CV Builder';
+  }, []);
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo);
   const [education, setEducation] = useState(
     exampleData.personalInfo.sections.educations
