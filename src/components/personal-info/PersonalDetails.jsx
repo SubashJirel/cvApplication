@@ -2,8 +2,11 @@ import InputGroup from '../inputGroup';
 function PersonalDetails({ fullName, email, phoneNumber, address, onChange }) {
   return (
     <>
-      <form className="ps-8" action="">
-        <h2>Personal Details</h2>
+      <form
+        className="ps-8  bg-[#FFFFFF] h-[400px] shadow-xl rounded-lg w-5/6 m-auto mt-4 p-3 "
+        action=""
+      >
+        <h2 className="text-2xl font-bold pb-5 ">Personal Details</h2>
         <InputGroup
           type="text"
           id="full-name"

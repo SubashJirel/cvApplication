@@ -25,8 +25,8 @@ function App() {
 
   return (
     <>
-      <div className="border-2 border-red-500  grid grid-cols-5 h-screen ">
-        <div className="border-2 border-green-400 bg-blue-400 col-span-2 overflow-auto custom-scrollbar h-screen">
+      <div className="  grid grid-cols-5 h-screen bg-[#EEF1F3] ">
+        <div className=" bg-[#EEF1F3] col-span-2 overflow-auto custom-scrollbar h-screen">
           <PersonalDetails
             onChange={handlePersonalInfoChange}
             fullName={personalInfo.fullName}
@@ -41,7 +41,7 @@ function App() {
           />
         </div>
 
-        <div className=" col-span-3 bg-slate-500 flex flex-col space-y-4 ">
+        <div className=" col-span-3 bg-[#EEF1F3] flex flex-col space-y-4 ">
           <ResumePreview
             personalInfo={personalInfo}
             education={education}

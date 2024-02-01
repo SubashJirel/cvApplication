@@ -5,14 +5,13 @@ function InputGroup({
   labelText,
   onChange,
   value,
-  optional,
+
   'data-key': dataKey,
 }) {
   return (
-    <div className="input-group">
-      <label htmlFor={id}>
-        <span className="label-text">{labelText}</span>
-        {optional && <span className="optional-text">optional</span>}
+    <div className="input-group flex flex-col mb-3">
+      <label htmlFor={id} className="mb-2">
+        <span className="label-text font-semibold ">{labelText}</span>
       </label>
 
       {type === 'textarea' ? (
@@ -25,6 +24,7 @@ function InputGroup({
         ></textarea>
       ) : (
         <input
+          className="p-[5px] rounded focus:outline-none focus:ring focus:[#3B83F6] bg-[#F3F4F6]"
           type={type}
           id={id}
           placeholder={placeholder}
