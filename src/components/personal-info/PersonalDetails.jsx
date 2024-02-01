@@ -1,4 +1,4 @@
-import InputGroup from '../inputGroup';
+import InputGroup from '../InputGroup';
 function PersonalDetails({ fullName, email, phoneNumber, address, onChange }) {
   return (
     <>
