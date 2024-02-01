@@ -38,7 +38,7 @@ function ExperienceForm({ experience, setExperience, toggleShow }) {
               name="companyName"
               value={formData.companyName}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -51,7 +51,7 @@ function ExperienceForm({ experience, setExperience, toggleShow }) {
               name="positionTitle"
               value={formData.positionTitle}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -61,7 +61,7 @@ function ExperienceForm({ experience, setExperience, toggleShow }) {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -72,7 +72,7 @@ function ExperienceForm({ experience, setExperience, toggleShow }) {
               name="startDate"
               value={formData.startDate}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -83,7 +83,7 @@ function ExperienceForm({ experience, setExperience, toggleShow }) {
               name="endDate"
               value={formData.endDate}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>

@@ -20,14 +20,13 @@ function EducationSection({ education, setEducation }) {
     setShowBtnForm((prev) => (prev == 'button' ? 'form' : 'button'));
   }
   return (
-    <div className="ps-8">
-      <h1 className="text-3xl font-bold mb-3 mt-3">Education</h1>
+    <div className="ps-8 border bg-[#FFFFFF]  shadow-xl rounded-lg w-5/6 m-auto mt-4 p-4">
+      <h1 className="text-2xl font-bold mb-3 mt-2">Education</h1>
       {education.map((val) => (
         <>
-          <div className="flex items-center border border-solid border-black rounded-3xl mb-2 mr-4">
-            <div className="m-3 flex flex-col" key={val.id}>
-              <div className=" font-bold">{val.schoolName}</div>
-              <div>{val.degree}</div>
+          <div className="flex items-center justify-start rounded bg-[#F3F4F6] mb-2 mr-4">
+            <div className="m-3 " key={val.id}>
+              <div className=" font-semibold">{val.schoolName}</div>
             </div>
             <Trash2
               style={{ cursor: 'pointer' }}

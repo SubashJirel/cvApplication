@@ -37,7 +37,7 @@ function EducationForm({ education, setEducation, toggleShow }) {
               name="schoolName"
               value={formData.schoolName}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -48,7 +48,7 @@ function EducationForm({ education, setEducation, toggleShow }) {
               name="degree"
               value={formData.degree}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -59,7 +59,7 @@ function EducationForm({ education, setEducation, toggleShow }) {
               name="startDate"
               value={formData.startDate}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>
@@ -70,7 +70,7 @@ function EducationForm({ education, setEducation, toggleShow }) {
               name="endDate"
               value={formData.endDate}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              className="bg-[#F3F4F6] w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               type="text"
             />
           </div>

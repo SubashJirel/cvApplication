@@ -19,7 +19,7 @@ const exampleData = {
           id: uniqid(),
         },
         {
-          degree: "Master's Degree in Information Technology",
+          degree: "Master's Degree in IT",
           schoolName: 'Tribhuvan University',
 
           startDate: '08/2021',
