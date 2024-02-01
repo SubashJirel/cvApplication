@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import uniqid from 'uniqid';
-import PreviewEducation from '../previewRightSide/PreviewEducation';
 
 function EducationForm({ education, setEducation, toggleShow }) {
   const [formData, setFormData] = useState({

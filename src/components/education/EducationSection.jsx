@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import EducationForm from './educationForm';
-import exampleData from '../../example-data';
+import EducationForm from './EducationForm';
 
 import { Trash2 } from 'lucide-react';
 function EducationSection({ education, setEducation }) {

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ExperienceForm from './ExperienceForm';
-import exampleData from '../../example-data';
 
 import { Trash2 } from 'lucide-react';
 function ExperienceSection({ experience, setExperience }) {
