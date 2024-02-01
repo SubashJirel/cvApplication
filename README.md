@@ -35,7 +35,7 @@ The project is configured to deploy on [Netlify](https://www.netlify.com/). The 
 
 ## Live Demo
 
-Check out the live demo of the Currency Converter [here]().
+Check out the live demo of CV builder [here]().
 
 ## Technologies Used
 
