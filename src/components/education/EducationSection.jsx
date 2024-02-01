@@ -20,7 +20,7 @@ function EducationSection({ education, setEducation }) {
     setShowBtnForm((prev) => (prev == 'button' ? 'form' : 'button'));
   }
   return (
-    <div className="ps-8 border bg-[#FFFFFF]  shadow-xl rounded-lg w-5/6 m-auto mt-4 p-4">
+    <div className="ps-8  bg-[#FFFFFF]  shadow-xl rounded-lg w-5/6 m-auto mt-4 p-4">
       <h1 className="text-2xl font-bold mb-3 mt-2">Education</h1>
       {education.map((val) => (
         <>
